@@ -1,0 +1,215 @@
+---
+import Navbar from '../../components/Landing-components/Navbar.astro';
+import Layout from '../../layouts/Layout.astro';
+import Title from '../../components/Landing-components/RE1-Titulo.astro';
+import Footer from '../../components/Landing-components/Footer.astro';
+import Soluciones from '../../components/Landing-components/Soluciones.astro';
+import Solucionesimage from '../../components/Landing-components/Solucionesimage.astro';
+import CasosdeExito from '../../components/Landing-components/CasosdeExito.astro';
+
+---
+
+<Layout title="Ciberseguridad">
+    <Navbar/>
+    <section class="principal-section">
+        <Title description="Ciberseguridad" subtitle=""/>
+        <div class="button--container">
+            <button class="principal--section__button animate__animated animate__fadeInUp" id="landingbutton">Contactanos</button>
+        </div>
+    </section>
+    <h2 class="section--title"><span style="color: #F5F5F5;">Nuestras</span> Soluciones</h2>
+    <section class="secondary-section">
+        <div class="info-producto-container">
+            <div class="container">
+                <Soluciones title="Consultorias de Seguridad" text="Es el servicio más integral proporcionado, ya que abarca todos los niveles de la planeación, el hacer, el verificar y el actuar, relacionados con la seguridad de la información."/>
+                <Solucionesimage src="/../../ConsultoriasdeSeguridadDocs.jpg"/>
+            </div>
+            <div class="container">
+                <Solucionesimage src="/../../UsuariosyAccesosDocs.png"/>
+                <Soluciones title="Usuarios y Accesos" text="El control de acceso es un elemento clave de la seguridad que formaliza quién tiene permiso para acceder a ciertos datos, aplicaciones y recursos y en qué condiciones."/>
+            </div>
+            <div class="container">
+                <Soluciones title="Proteccion de nube y red" text="Es el servicio más integral proporcionado, ya que abarca todos los niveles de la planeación, el hacer, el verificar y el actuar, relacionados con la seguridad de la información."/>
+                <Solucionesimage src="/../../ProtecciondelanubeyredDocs.png"/>
+            </div>
+            <div class="container">
+                <Solucionesimage src="/../../GestionUnificadaDocs.png"/>
+                <Soluciones title="Gestión Unificada" text="Es un término de seguridad de la información que se refiere a una sola solución de seguridad y, por lo general, a un único producto de seguridad que ofrece varias funciones de protección en un solo punto en la red."/>
+            </div>
+        </div>
+    </section>
+    <h2 class="section--title"><span style="color: #F5F5F5;">Casos</span> de Exito</h2>
+    <section class="section-cases">
+        <CasosdeExito title="Farmaenlace" description="Farmaenlace es una empresa que se dedica a la distribución de medicamentos mediante las farmacias: Económicas, Medicity, y Punto Natural ubicadas en todo Ecuador. Su Matriz cuenta con más de 300 colaboradores, y en sus puntos de venta, emplea más de 2.800 trabajadores."/>
+    </section>
+    <Footer/>
+</Layout>
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        overflow-x:hidden !important;
+        margin-left: 0;
+        height: 100%; 
+        background: radial-gradient(100% 100% at 50% 0%, #1F2063 0%, #1D5AAA 100%);
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        padding-bottom: 50px;
+    }
+    
+    .section--title{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size:calc(30px,56px,100px);
+    text-align: center;
+    color: #FFDC9A;
+    }
+    
+    .details--section{
+        display: flex;
+        flex-direction: row;
+        padding-left: 16%;
+        padding-right: 16%;
+        margin-top: 52px;
+    }
+    .principal-section{
+        background: url("/public/Pathern.png");
+        width: 100%;
+        height: 60%;
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+    .beneficios--container{
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 0.8fr;
+        text-align: center;
+        column-gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .principal--section__button{
+        border: 1px solid #FFDC9A;
+        border-radius: 7px;
+        width: 187px;
+        height: 56px;
+        background-color: transparent;
+        color:#FFDC9A;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .button--container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 200px;
+    }
+    
+    .secondary-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .info-producto-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    .section-cases{
+        height: 400px;
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 600px) {
+    
+        .container:nth-child(odd){
+        display: flex;
+        flex-direction: column-reverse;
+        }
+    
+        .beneficios--container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+    
+        .info-producto-container{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .details--section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 16%;
+        padding-right: 16%;
+        margin-top: 52px;
+        }
+    
+        .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding-bottom: 50px;
+        text-align: center;
+        }
+    
+        .secondary-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        }
+    
+        .info-producto-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15%;
+        padding-left: 0;
+        padding-right: 0;
+        }
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    </style>
+    

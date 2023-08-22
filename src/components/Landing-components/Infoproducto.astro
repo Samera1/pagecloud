@@ -1,0 +1,56 @@
+---
+const {icon} = Astro.props
+const {title} =Astro.props
+const {description} = Astro.props
+const {href} = Astro.props
+---
+
+<div class="info-prod">
+    <img class="icon" src={icon}/>
+    <h2>¿Qué hace {title}?</h2>
+    <p>{description}</p>
+    <img class="info" src={href}/>
+</div>
+
+<style>
+.info-prod{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    width: 45px;
+    padding-bottom: 17px;
+}
+
+.info-prod h2{ 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1D5AAA;
+    padding-bottom: 17px;
+    text-align: center;
+}
+
+
+.info-prod p{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+@media screen and (max-width: 600px) {
+.info{
+    display: none;
+}
+
+
+
+}
+
+</style>

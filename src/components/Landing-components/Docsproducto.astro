@@ -1,0 +1,57 @@
+---
+const {image}= Astro.props;
+const {href}= Astro.props;
+---
+
+<div class="image-container">
+    <a><img src={image}/></a>
+    <h3 class="principal--section__button"></h3>
+</div>
+
+<style>
+    .image-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+
+    .image-container img:hover{
+        cursor: pointer;
+
+    }
+
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .principal--section__button{
+		border-radius: 7px;
+		background-color: transparent;
+        border-color: #1D5AAA;
+		color:#1D5AAA;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.50rem;
+		line-height: 30px;
+        padding-top: 20px;
+	}
+
+    @media screen and (max-width: 600px) {
+        .image-container {
+        display: none;
+        }
+    }
+
+
+    
+
+
+</style>

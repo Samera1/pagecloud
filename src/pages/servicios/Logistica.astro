@@ -1,0 +1,217 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Reduce costos y mejora tus procesos">
+    <div class="principal--container">
+        <div class="secondary-container">
+            <h2>Administra tu flota vehicular maquinaria pesada o de construcción</h2>
+            <p>Reduce costos y mejora tus procesos</p>
+            <div class="container-button">
+                <button class="button-primary" id="landingbutton">Contactanos</button>
+                <button class="button-secondary">Descargar Infografia</button>
+            </div>
+        </div>
+        <div>
+            <img src="/../../Patron.svg" class="background"/>
+            <img src="/../../Camion.svg" class="carro"/>
+        </div>
+    </div>
+    <div class="principal--subcontainer">
+        <div>
+            <h2>Contactanos</h2>
+            <p>Reduce costos y mejora tus procesos</p>
+        </div>
+        <div>
+            <iframe class="form--framer"  id=d9722c4e-b97d-4452-8555-f19213de26d2></iframe><script>var sandboxSrc = "https://28261c29b8e6485dba05ea820e2d5ecb.svc.dynamics.com/t/formsandbox/z2RMXOKblIK0LvqurxaneXCnFKMIplhmtAJWqpTksQw/9c6131f2-2a20-ee11-9966-000d3ac036b2?ad=" + encodeURIComponent(document.location.toString()); document.getElementById('d9722c4e-b97d-4452-8555-f19213de26d2').setAttribute('src', sandboxSrc); </script>
+        </div>
+    </div>
+    <footer>
+        <img/>
+    </footer>
+</Layout>
+
+<style>
+
+    :root{
+        --type-fontsize-min: 1.625em;
+        --type-fontsize-max: 3.2em;
+        --type-fontsize-value: 0.73em + 4.36vw;
+        --p-fontsize-min: 1.125em;
+        --p-fontsize-max: 1.4375em;
+        --p-fontsize-value: 1.02em + 0.53vw;
+        --button-color: #1D4BD4;
+        --text-white:#FFFFFF;
+
+    }
+
+    body{
+        margin-left:5% ;
+        margin-right: 5%;
+        overflow-x: hidden;
+        
+    }
+
+    .form--framer{
+        border: 0;
+        width: 700px;
+        height: 500px;
+    }
+
+
+    .principal--container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .principal--subcontainer{
+        display: flex;
+        flex-direction: row;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .principal--subcontainer h2{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .principal--subcontainer p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .background{
+        position: absolute;
+        right: -100px;
+        top:20px;
+        z-index: -1;
+    }
+
+    .secondary-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondary-container h2{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .secondary-container p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .button-primary{
+        border-radius: 31px;
+        background: #1D4BD4;
+        color: white;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 227px;
+        height: 56px;
+    }
+
+    .button-secondary{
+        border: 2px;
+        border-color: #1D4BD4;
+        width: 227px;
+        height: 56px;
+        color: #1D4BD4;
+        border: 1px solid #1D4BD4;
+        border-radius: 31px;
+        background-color: #FFFFFF;
+
+    }
+
+
+    @media screen and (max-width: 600px) {
+
+    .principal--container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 700px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .carro{
+        width: 277px;
+        height: 142px;
+    }
+
+    
+    .background{
+        position: absolute;
+        right: 0px;
+        top:20px;
+        z-index: -1;
+    }
+
+    .principal--subcontainer{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form--framer{
+        border: 0;
+        width: 340px;
+        height: 400px;
+        }
+
+
+    .principal--subcontainer h2{
+        font-size: 32px;
+    }
+
+    .principal--subcontainer p{
+        font-size: 20px;	
+    }
+
+    .principal--container h2{
+        font-size: 32px;
+    }
+
+    .principal--container p{
+        font-size: 20px;	
+    }
+
+    .container-button{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+</style> 
+
+<script>
+	const secondarybutton = document.getElementById('landingbutton');
+	secondarybutton.addEventListener('click',scrollingbutton)
+	secondarybutton.addEventListener('click',()=>{console.log('hola')})
+	function scrollingbutton(){
+		window.scrollTo(0,30000);
+	}
+</script>

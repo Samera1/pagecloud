@@ -1,0 +1,64 @@
+---
+const {image}= Astro.props;
+const {description }= Astro.props;
+---
+
+<div class="container">
+    <h2 class="title-section">Beneficios</h2>
+    <p class="description-section">{description}</p>
+    <img src={image}/>
+</div>
+
+<style>
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.container img{
+    width: 60%;
+    height: 265px;
+    align-self: center;
+    padding-top: 26px;
+}
+
+
+.title-section{
+    padding-top: 5%;
+	padding-bottom: 5%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size:calc(30px,56px,100px);
+	text-align: center;
+	color: #FFDC9A;
+}
+
+.description-section{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+        .container img{
+            display: none;
+        }
+
+        .description-section{
+            color: #FFFFFF;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+}
+
+</style>

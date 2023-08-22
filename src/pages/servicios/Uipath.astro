@@ -1,0 +1,151 @@
+---
+import Navbar from '../../components/Landing-components/Navbar.astro';
+import Layout from '../../layouts/Layout.astro';
+import Title from '../../components/Landing-components/RE1-Titulo.astro';
+import Descript from "../../components/Landing-components/RE4-Descript.astro";
+import Infoproducto from '../../components/Landing-components/Infoproducto.astro';
+import Docsproducto from '../../components/Landing-components/Docsproducto.astro';
+import Footer from '../../components/Landing-components/Footer.astro';
+import Caracteristicasprod from '../../components/Landing-components/Caracteristicasprod.astro';
+import Contactanos from '../../components/Landing-components/Contactanos.astro';
+import Detalles from '../../components/Landing-components/Detalles.astro';
+import Soluciones from '../../layouts/Soluciones.astro';
+---
+
+<Soluciones title="UI Path">
+    <Navbar/>
+    <section class="principal-section">
+        <Title description="UI Path" subtitle=""/>
+        <div class="beneficios--container animate__animated animate__fadeInUp">
+            <Descript percent="43%" description="de los procesos bancarios se pueden automatizar"/>
+            <Descript percent="50%" description="de las empresas tienen un ahorro de costos de más de $ 1 millón"/>
+            <Descript percent="200%" description="Mayor producción de fábrica después de la automatización"/>
+        </div>
+        <div class="button--container">
+            <button class="principal--section__button animate__animated animate__fadeInUp" id="landingbutton">Contactanos</button>
+        </div>
+    </section>
+    <section class="secondary-section">
+        <div class="info-producto-container">
+            <Infoproducto icon="../../unnamed.png" title="UI Path" description="La plataforma UiPath simplifica la transformación digital con una rápida automatización de los procesos." href="../../UiPathApps.png" />
+            <Docsproducto image="../../UiPathDocs.png" />
+        </div>
+    </section>
+    <section>
+        <Caracteristicasprod description="La automatización RPA está ayudando a organizaciones de todo el mundo a ser más céleres y ágiles ante un mundo rápidamente cambiante, mejorando la productividad, la experiencia del cliente." image="../../UiPathBanner.png"    />
+    </section>
+    <section class="details--section">
+        <Detalles title="Descubrir" descript="Le ayudamos a identificar las oportunidades de automatización en los procesos de su negocio"/>
+        <Detalles title="Implementar" descript="Evaluamos el costo-beneficio de la automatización de sus procesos, y le ayudamos a establecer la ruta."/>
+        <Detalles title="Gestionar " descript="Optimizamos su automatización con robots que trabajen con sus aplicaciones."/>
+        <Detalles title="Medir" descript="Mida las operaciones y el rendimiento para alinearse con los resultados del negoci."/>
+    </section>
+    <Contactanos/>
+    <Footer/>
+</Soluciones>
+
+
+<style>
+    *{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		overflow-x:hidden !important;
+		margin-left: 0;
+        height: 100%; 
+		background: radial-gradient(100% 100% at 50% 0%, #1F2063 0%, #1D5AAA 100%);
+	}
+
+    .details--section{
+        display: flex;
+        flex-direction: row;
+        padding-left: 16%;
+        padding-right: 16%;
+        margin-top: 52px;
+    }
+    .principal-section{
+        background: url("/public/Pathern.png");
+        width: 100%;
+        height: 60%;
+        padding-left: 16%;
+		padding-right: 16%;
+    }
+    .beneficios--container{
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 0.8fr;
+        text-align: center;
+        column-gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .principal--section__button{
+		border: 1px solid #FFDC9A;
+		border-radius: 7px;
+		width: 187px;
+        height: 56px;
+		background-color: transparent;
+		color:#FFDC9A;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 30px;
+		cursor: pointer;
+	}
+    .button--container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 200px;
+    }
+
+    .secondary-section{
+        background-color: white;
+        width: 100%;
+        height: 630px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .info-producto-container{
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .beneficios--container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+
+        .info-producto-container{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .details--section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 16%;
+        padding-right: 16%;
+        margin-top: 52px;
+    }
+
+
+
+    }
+
+</style>

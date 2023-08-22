@@ -1,0 +1,73 @@
+---
+import {Social} from '../../config/caracteristicas.json';
+
+---
+<div class="footer-container">
+    <div class="slogan-container">
+        <div class="flex-col">
+          <div>
+            <div class="flex-line"/>
+            <div class="container-display">
+              <p class="info-container"> Copyright 2023 Grupo360
+              </p>
+              <div class="icons-container">
+                {Social.map((social) => (
+                  <a href={social.href}>
+                    <img
+                    src={social.url}
+                    alt={social.name}
+                    class="icons-rss"
+                  />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<style>
+  .icons-rss{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor:pointer;
+  }
+
+  .footer-container{
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+
+  .icons-container{
+    display: flex;
+    gap:1rem;
+  }
+  .info-container{
+    color: white;
+  }
+  .container-display{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-line{
+    margin-bottom: 20px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  .slogan{
+    color: white;
+    font-weight:400;
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: 600px) {
+    .footer-container{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  }
+</style>

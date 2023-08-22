@@ -1,0 +1,91 @@
+---
+
+
+interface Props{
+	title:string
+	srcname:string
+	hrefname:string
+	
+}
+
+const {title} = Astro.props
+const {srcname}= Astro.props
+const{hrefname}= Astro.props
+
+---
+
+<a class="card--soluciones" href={hrefname}>
+	<img src = {srcname} alt="imagen">
+	<h2>{title}</h2>
+</a>
+
+<style>
+	.card--soluciones{
+		background-color: #1D5AAA;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 242px;
+		border-radius: 16px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.card--soluciones:hover{
+		transform: scale(1.1);
+	}
+
+	.card--soluciones img {
+		width: 130px;
+		
+	}
+	.card--soluciones h2{
+		color: #F5F5F5;
+		text-decoration:none;
+		font-family: 'Poppins';
+		font-size: 20px;
+		font-style: normal;
+		font-weight: bolder;
+		text-align: center;
+		margin: 30px;
+	}
+
+	@media screen and (max-width: 600px) {
+		.card--soluciones{
+		background-color: #1D5AAA;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		border-radius: 16px;
+	}
+
+	.card--soluciones img {
+		width: 40%;
+		margin: 10px;
+		
+	}
+	.card--soluciones h2{
+		color: #F5F5F5;
+		text-decoration:none;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-size: 10px;
+		font-weight: 400;
+		text-align: center;
+		margin: 10px;
+	}
+
+
+	}
+
+</style>
+
+<script>
+
+
+</script>

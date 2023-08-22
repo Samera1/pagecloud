@@ -1,0 +1,167 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import Navbar from "../../components/Landing-components/Navbar.astro";
+import Descript from "../../components/Landing-components/RE4-Descript.astro";
+import Footer from "../../components/Landing-components/Footer.astro";
+import Lider from "../../components/Landing-components/Lider.astro";
+import Testimonios from "../../components/Landing-components/Testimonios.astro";
+
+---
+<script type="text/javascript">
+	window.onload = function(){
+	(function(d, script) {
+	script = d.createElement('script');
+	script.type = 'text/javascript';
+	script.async = true;
+	script.src = 'https://w.app/widget-v1/fYyD9G.js';
+	d.getElementsByTagName('head')[0].appendChild(script);
+	}(document));
+	};
+</script>
+<Layout title="Nosotros">
+    <Navbar/>
+    <section class="container">
+        <div class="section-one-container">
+            <div class="section-container">
+                <h2 class="section--title"><span style="color: #F5F5F5;">Acerca de </span> Nosotros</h2>
+                <p class="section--subtitle"> Somos una empresa que genera soluciones tecnologicas adaptadas a cualquier realidad empresarial</p>
+            </div>
+            <div class="details-section">
+                <Descript percent="+25" description="Integrantes"/>
+                <Descript percent="+8" description="Años en el mercado"/>
+                <Descript percent="+250" description="Clientes"/>
+            </div>
+        </div>
+        <section class="about-us-section">
+            <h2 class="section--title"><span style="color: #F5F5F5;">Quiénes</span> somos</h2>
+            <p class="section--subtitle"> Somos una empresa que cree en la innovacion y la mejora continua acompañada siempre de altos estandares para mejorar la realidad de las empresas en Latam</p>
+        </section>
+        <section>
+            <h2 class="section--title"><span style="color: #F5F5F5;">Nuestros</span> Lideres</h2>
+            <div class="leaders-container">
+                <Lider link="../../Francisco-Andrade.jfif" name="Francisco Andrade" cargo="Gerente General"/>
+                <Lider link="../../Ivan-Lima.jfif" name="Ivan Lima" cargo="Gerente de Servicios"/>
+                <Lider link="../../Fausto-Pardo.jfif" name="Fausto Pardo" cargo="Gerente de Innovacion" testimonio="Su equipo de atención al cliente es excepcional y siempre están dispuestos a ayudar"/>
+            </div>
+        </section>
+    </section>
+    <Footer/>
+</Layout>
+
+
+
+<style>
+    *{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		overflow-x:hidden;
+		margin-left: 0;
+        height: 100%; 
+		background: radial-gradient(100% 100% at 50% 0%, #1F2063 0%, #1D5AAA 100%);
+	}
+    .container{
+        max-width: 95vh;
+    }
+    .section-one-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+        align-items: center;
+    }
+
+    .section--title {
+        color:#FFDC9A ;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .section--subtitle{
+        font-size: 1.35rem;
+        color: white;
+        text-align: center!important;
+    }
+
+    .section-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .beneficios--container{
+        display: flex;
+        text-align: center;
+        column-gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+
+    .details-section{
+        display: flex;
+        gap: 40px;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .about-us-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 700px;
+        align-items: center;
+    }
+
+    .leaders-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 500px;
+        align-items: center;
+    }
+    .section-testimonios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        height: 500px;
+        align-items: center;
+
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .beneficios--container{
+            display: flex;
+            flex-direction: column;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        .button--container{
+        padding-bottom: 50px;
+        }
+
+        .seccion--caracteristicas_detail{
+        display: grid;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .leaders-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 800px;
+        align-items: center;
+    }
+
+    .section-testimonios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 900px;
+        align-items: center;
+
+    }
+
+    }
+</style>

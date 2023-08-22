@@ -1,0 +1,150 @@
+---
+import Navbar from '../../components/Landing-components/Navbar.astro';
+import Layout from '../../layouts/Layout.astro';
+import Title from '../../components/Landing-components/RE1-Titulo.astro';
+import Descript from "../../components/Landing-components/RE4-Descript.astro";
+import Infoproducto from '../../components/Landing-components/Infoproducto.astro';
+import Docsproducto from '../../components/Landing-components/Docsproducto.astro';
+import Footer from '../../components/Landing-components/Footer.astro';
+import Caracteristicasprod from '../../components/Landing-components/Caracteristicasprod.astro';
+import Contactanos from '../../components/Landing-components/Contactanos.astro';
+import Detalles from '../../components/Landing-components/Detalles.astro';
+import Soluciones from '../../layouts/Soluciones.astro';
+---
+
+<Soluciones title="Sharepoint">
+    <Navbar/>
+    <section class="principal-section">
+        <Title description="SharePoint" subtitle=""/>
+        <div class="beneficios--container animate__animated animate__fadeInUp">
+            <Descript percent="190" description="Millones de Usuarios"/>
+            <Descript percent="75%" description="De Intranets construidas con SharePoint"/>
+            <Descript percent="20%" description="De crecimiento anual"/>
+        </div>
+        <div class="button--container">
+            <button class="principal--section__button animate__animated animate__fadeInUp" id="landingbutton">Contactanos</button>
+        </div>
+    </section>
+    <section class="secondary-section">
+        <div class="info-producto-container">
+            <Infoproducto icon="../../Sharepoint.svg" title="SharePoint" description="Comparte y administra contenido, conocimientos y aplicaciones para impulsar el trabajo en equipo, encontrar información rápidamente y colaborar con todos los miembros de la organización sin problemas." href="../../SharePointApps.png" />
+            <Docsproducto image="../../SharepointDocs.png" />
+        </div>
+    </section>
+    <section>
+        <Caracteristicasprod description="SharePoint impulsa el trabajo en equipo con sitios de grupo dinámicos y productivos para cada equipo de proyecto, departamento y división." image="../../SharepointPersons.png"/>
+    </section>
+    <section class="details--section">
+        <Detalles title="Interactuar" descript="Crea cohesión e informa a tus empleados a través de la intranet. Mejora la eficiencia de la organización compartiendo recursos y aplicaciones"/>
+        <Detalles title="Conocimiento colectivo" descript="Encontrarás lo que estás buscando con un solo clic gracias a la eficaz función de búsqueda."/>
+        <Detalles title="Transformar Procesos" descript="Transforma los procesos para acelerar la productividad: desde tareas sencillas, como notificaciones y aprobaciones"/>
+        <Detalles title="Colaboración continua" descript="Comparte archivos, datos, noticias y recursos. Personaliza tu sitio para simplificar el trabajo de tu equipo"/>
+    </section>
+    <Contactanos/>
+    <Footer/>
+</Soluciones>
+
+<style>
+    *{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		overflow-x:hidden !important;
+		margin-left: 0;
+        height: 100%; 
+		background: radial-gradient(100% 100% at 50% 0%, #1F2063 0%, #1D5AAA 100%);
+	}
+
+    .details--section{
+        display: flex;
+        flex-direction: row;
+        padding-left: 16%;
+        padding-right: 16%;
+        margin-top: 52px;
+    }
+    .principal-section{
+        background: url("/public/Pathern.png");
+        width: 100%;
+        height: 60%;
+        padding-left: 16%;
+		padding-right: 16%;
+    }
+    .beneficios--container{
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 0.8fr;
+        text-align: center;
+        column-gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .principal--section__button{
+		border: 1px solid #FFDC9A;
+		border-radius: 7px;
+		width: 187px;
+        height: 56px;
+		background-color: transparent;
+		color:#FFDC9A;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 30px;
+		cursor: pointer;
+	}
+    .button--container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 200px;
+    }
+
+    .secondary-section{
+        background-color: white;
+        width: 100%;
+        height: 630px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .info-producto-container{
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .beneficios--container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 68px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+
+        .info-producto-container{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .details--section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 16%;
+        padding-right: 16%;
+        margin-top: 52px;
+    }
+
+
+
+    }
+
+</style>

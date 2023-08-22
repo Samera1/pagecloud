@@ -1,0 +1,39 @@
+---
+const {title}= Astro.props;
+const {descript}= Astro.props;
+---
+
+<div class="container">
+    <h4 class="container--title">{title}</h4>
+    <p class="container--descript">{descript}</p>
+</div>
+
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container--title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: #FFDC9A;
+    }
+
+    .container--descript{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    
+
+
+</style>

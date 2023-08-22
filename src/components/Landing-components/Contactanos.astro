@@ -1,0 +1,84 @@
+---
+const idframe = 'afee1373-1305-4cbc-bf78-6a07efbdcb62'
+import Message from '/public/mensaje.png'
+---
+
+
+<section class="container">
+    <div>
+        <h2 class="section--title">Contactanos</h2>
+    </div>
+    <div class="container--image">
+        <div>
+            <img src={Message} alt="message">
+        </div>
+        <div>
+            <iframe  id={idframe} class="form--frame">
+            </iframe>
+            <script>var sandboxSrc = "https://28261c29b8e6485dba05ea820e2d5ecb.svc.dynamics.com/t/formsandbox/gC4K7g7iWQMdIW9U5-OBUrzN5tt8ImvJrN70K6_rbgA/6263ac7d-d235-ec11-8c64-00224837d22b?ad=" + encodeURIComponent(document.location.toString()); document.getElementById('afee1373-1305-4cbc-bf78-6a07efbdcb62').setAttribute('src', sandboxSrc); 
+            </script>
+        </div>
+    </div>
+</section>
+
+<style>
+
+
+    .container{
+        background: url("/public/Pathern.png");
+    }
+
+    .form--frame{
+        border: 0;
+        width: 800px;
+        height: 700px;
+    }
+
+    .container--image{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        align-items: center;
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+
+    img{
+        width:30rem;
+        margin-right: 30px;
+        margin-bottom: 150px;
+    }
+
+    .section--title{
+	padding-top: 10%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.75rem;
+	text-align: center;
+	color: #FFDC9A;
+	}
+
+    @media screen and (max-width: 600px) {
+        .section--title{
+         margin-top: 100px;
+
+        }
+        .container--image{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        }
+        .container--image img{
+        display: none;
+        }
+        .form--frame{
+        border: 0;
+        width: 340px;
+        height: 800px;
+        }
+        
+
+		
+    }
+</style>

@@ -1,0 +1,122 @@
+---
+interface Props {
+	title:string;
+	description:string;
+    src:string;
+}
+
+const {title}= Astro.props;
+const {description}= Astro.props;
+const {src}= Astro.props;
+
+
+---
+
+<div class="container--grid">
+    <div class="detail--grid">
+        <h4>{title}</h4>
+        <p>{description}</p>
+    </div>
+    <div class="image--grid">
+        <img src={src} alt="">
+    </div>
+
+</div>
+
+
+<style>
+    .container--grid{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 150px;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .detail--grid{
+            display: grid;
+            grid-template-rows: 0fr 0.5fr;
+            align-content: center;
+            align-items: center;
+        }
+
+    h4{
+        font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.75rem;
+		color: #FFDC9A;
+        text-align: justify;
+        margin: 0%;
+    }
+
+    p{
+        margin:0%;
+        font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		color: #FFFFFF;
+    }
+
+    .image--grid{
+        display: flex;
+        width: 100%;
+        height: 160px;
+        border: 1px solid #FFDC9A;
+        border-radius: 16px;
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .image--grid img{
+        width: 130px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        body{
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .container--grid{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        .image--grid{
+        width: 100%;
+        height: 160px;
+        border: none;
+        margin: 0px;
+    }
+
+    h4{
+        text-align: center;
+        margin: 1rem;
+    }
+
+    p{
+        margin:0%;
+        font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		color: #FFFFFF;
+        text-align: center;
+    }
+
+    }
+
+</style>
+
+<script>
+    
+
+
+
+
+</script>

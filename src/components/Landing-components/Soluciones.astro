@@ -1,0 +1,37 @@
+---
+const {title} = Astro.props
+const {text} = Astro.props
+---
+
+
+    <div class="soluciones-container">
+        <h2>{title}</h2>
+        <p>{text}</p>
+    </div>
+
+<style>
+
+    .soluciones-container h2{
+        font-size: 24px;
+        color: white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;  
+
+    }
+
+    .soluciones-container p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        color: white;
+    }
+
+
+
+</style>
+
+

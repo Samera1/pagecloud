@@ -1,0 +1,55 @@
+---
+const {link} = Astro.props
+const {href} =Astro.props
+const {name} = Astro.props
+const {cargo} = Astro.props
+---
+
+<div>
+    <div class="container">
+        <img src={link} class="lider-img"/>
+        <div class="info-container">
+            <h3>{name}</h3>
+            <p>{cargo}</p>
+            <div class="redes-sociales">
+                <a href={href}><img src="../../linkedin.svg"/></a>
+                <a href={href}><img src="../../twitter.svg"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .lider-img{
+        width: 100px;
+        border-radius: 50%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        width: 350px;
+    }
+    .container h3{
+        font-weight: bolder;
+        font-size: 1.1rem;
+        color: white;
+    }
+    .container p{
+        font-weight: lighter;
+        font-size: 1.1rem;
+        color: white;
+    }
+    .info-container{
+        padding-left: 16px;
+    }
+    .info-container a{
+        width: 12px;
+        margin: 4px;
+    }
+    .redes-sociales img{
+        width: 16px; cursor: pointer;
+    }
+
+
+</style>

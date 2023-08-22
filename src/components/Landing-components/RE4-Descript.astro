@@ -1,0 +1,34 @@
+---
+interface Props {
+	percent:string;
+	description:string;
+}
+
+const {percent}= Astro.props;
+const {description }= Astro.props;
+---
+<div>
+    <h4 class="percent">{percent}</h4>
+    <p>{description}</p>
+</div>
+
+<style>
+    
+    .percent{
+        font-family: 'Poppins';
+		font-weight: 800;
+		font-size: 2.5rem;
+		line-height: 1.5rem;
+		color: #FFDC9A;
+		padding-bottom: 10px;
+    }
+    p{
+        font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 24px;
+		color: #FFFFFF;
+    }
+
+</style>

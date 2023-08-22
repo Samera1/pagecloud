@@ -1,0 +1,65 @@
+{
+    "azure": [
+        {
+            "areastitle": "Azure Back Up",
+            "areasdescription":"Reduzca el coste de implementar, supervisar, aplicar revisiones y mantener una infraestructura de recuperación ante desastres,eliminando la necesidad de crear o mantener costosos centros de datos secundarios.",
+            "imagelink":"/public/05 Azure Backup.png"
+        },
+        {
+            "areastitle": "Backup SaaS",
+            "areasdescription":"Controla y gestiona todas las tareas de restauración y copia de seguridad, usuarios, terminales, y almacenamiento." ,
+            "imagelink":"/public/06 Back Up SaaS.png"
+        },
+        {
+            "areastitle": "Site Recovery",
+            "areasdescription":"Facilidad de implementación, rentabilidad y confiabilidad. Implementamos procesos de replicación, conmutación por error y recuperación.",
+            "imagelink":"/public/iconos_Mesa de trabajo 1 copia 11.png" 
+        },
+        {
+            "areastitle": "Device as a Service",
+            "areasdescription":"Gestiona la infraestructura de tu negocio en la nube sin limites de almacenamiento y procesamiento de una manera fácil y confiable ",
+            "imagelink":"/public/iconos_Mesa de trabajo 1 copia 12.png"
+        }
+    ],
+
+    "Hiperautomatizacion": [
+        {
+            "areastitle": "Empresas",
+            "areasdescription":"Proporciona datos de fuentes internas y externas para facilitar la contabilidad fiscal, la declaración de impuestos y el cálculo de impuestos sobre las ventas y el consumo."
+        },
+        {
+            "areastitle": "Negocios",
+            "areasdescription":"Generación de pedidos, Picking, Hojas de despacho. Validación de órdenes de produccion/mantenimiento y toma de decisiones."
+        },
+        {
+            "areastitle": "Finanzas",
+            "areasdescription":"Implementación de RPA en tareas rutinarias como carga de factura o retenciones al sistema contable." 
+        }
+    ],
+
+    "Social": [
+        {
+            "name": "twiter",
+            "url":"/twitter.svg",
+            "href":"/twitter.svg"
+
+        },
+        {
+            "name": "linkedln",
+            "url":"/linkedin.svg",
+            "href":"https://www.linkedin.com/company/cloud360ec"
+        },
+        {
+            "name": "instagram",
+            "url":"/instagram.svg",
+            "href":"/twitter.svg"
+        },
+        {
+            "name": "facebook",
+            "url":"/facebook.svg",
+            "href":"https://www.facebook.com/Cloud360ec"
+        }
+    ]
+
+   
+}
