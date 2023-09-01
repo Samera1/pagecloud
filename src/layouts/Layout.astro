@@ -31,17 +31,14 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{title}</title>
 	</head>
-	<script type="text/javascript">
-		window.onload = function(){
-		(function(d, script) {
-		script = d.createElement('script');
-		script.type = 'text/javascript';
-		script.async = true;
-		script.src = 'https://w.app/widget-v1/fYyD9G.js';
-		d.getElementsByTagName('head')[0].appendChild(script);
-		}(document));
-		};
+	<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+	<script>
+	var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"593982847909","welcomeMessage":"Quiero más información","zIndex":999999,"btnColorScheme":"light"};
+	window.onload = () => {
+	_waEmbed(wa_btnSetting);
+	};
 	</script>
+
 
 	<body>
 		<slot/>
