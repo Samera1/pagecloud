@@ -1,0 +1,311 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Supera los desafios operativos de tu empresa">
+ <section class="principal-section">
+    <div class="principal-container">
+        <h2>Supera los desafios oporativos de tu empresa</h2>
+        <p>La RPA imita las acciones humanas en aplicaciones y sistemas, pero opera continuamente, es más rápida y precisa al 100%.</p>
+        <a>Solicitar una Demostración</a>
+    </div>
+    <div>
+        <img alt="desafios operativos de tu empresa" src="/../../PrincipalRPA.png"/>
+    </div>
+ </section>
+ <section class="benefits-container">
+    <div class="benefits-title">
+        <p>CONOCE LOS</p>
+        <h3>Los beneficios de la RPA</h3>
+    </div>
+    <div class="benefits-grid">
+        <span>
+            <img/>
+            <h4>Aumente la productividad</h4>
+            <p>Acelere y optimice los flujos de trabajo con mayor confiabilidad y precisión.</p>
+        </span>
+        <span>
+            <img/>
+            <h4>Ahorre dinero</h4>
+            <p>Aumente la eficiencia en toda la organización al reducir costos y proporcionar un rápido retorno de la inversión (ROI)</p>
+        </span>
+        <span>
+            <img/>
+            <h4>Integración perfecta</h4>
+            <p>Elimine los silos tecnológicos y logre una mayor eficiencia y colaboración en toda la empresa.</p>
+        </span>
+        <span>
+            <img/>
+            <h4>Mejore la adaptabilidad</h4>
+            <p>Escale los procesos respetando los requisitos de seguridad y cumplimiento.</p>
+        </span>
+    </div>
+ </section>
+ <section>
+    <div class="benefits-title">
+        <p>DESCUBRE</p>
+        <h3>¿Cómo funciona la RPA empresarial?</h3>
+    </div>
+    <div class="benefits-description">
+        <div>
+            <img alt="" src="../../Persons.png"/>
+        </div>
+        <div class="benefits-text">
+            <p>La automatización robótica de procesos (RPA) es un software que ejecuta tareas utilizando habilidades digitales comparables a las humanas, y más aún. Se comporta como una fuerza laboral digital que puede interactuar con sistemas y aplicaciones para realizar labores repetitivas, tales como copiar y pegar, extraer datos de la web, realizar cálculos, entre otras. <br/>
+            A pesar de sus amplias capacidades, configurar estas automatizaciones resulta sorprendentemente sencillo e intuitivo, similar a grabar y compartir un video en un teléfono inteligente.</p>
+
+            <a>Solicitar una Demostración</a>
+        </div>
+    </div>
+ </section>
+ <section class="cases-industry">
+    <div class="cases-text">
+        <h4>CONOCE LOS</h4>
+        <h3>Casos por industria</h3>
+        <p>Nuestra experiencia abarca una amplia gama de servicios y areas, desde la automatización de procesos hasta la implementación de sistemas inteligentes que garantizan precisión y eficiencia. </p>
+        <a>Descarga nuestra guía</a>
+    </div>
+    <div class="cases-tipes">
+        <span class="container">
+            <img alt="" src="../../Financial.png"/>
+            <h2>Servicios Financieros</h2>
+        </span>
+        <span class="container">
+            <img alt="" src="../../Comercial.png"/>
+            <h2>Empresas Comerciales</h2>
+        </span>
+        <span class="container">
+            <img alt="" src="../../Humans.png"/>
+            <h2>Recursos Humanos</h2>
+        </span>
+        <span class="container">
+            <img alt="" src="../../Production.png"/>
+            <h2>Producción</h2>
+        </span>
+    </div>
+ </section>
+ <section>
+    <div class="benefits-title">
+        <p>NO TE QUEDES ATRAS</p>
+        <h3>Contáctanos</h3>
+    </div>
+    <div>
+        
+    </div>
+    
+
+ </section>
+</Layout>
+
+<style>
+
+
+    :root{
+        --type-fontsize-min: 1.625em;
+        --type-fontsize-max: 3.2em;
+        --type-fontsize-value: 0.73em + 4.36vw;
+        --p-fontsize-min: 1.125em;
+        --p-fontsize-max: 1.4375em;
+        --p-fontsize-value: 1.02em + 0.53vw;
+        --button-color: #377DFF;
+        --text-black:#000000;
+    }
+
+    body{
+        margin-left:5% ;
+        margin-right: 5%;
+        overflow-x: hidden;
+    }
+
+    .principal-section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .principal-section h2{
+        font-family: Inter;
+        font-weight: 900;
+        line-height: 81px;
+        font-size: 60px;
+    }
+
+    .principal-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .principal-section p{
+        font-family: Inter;
+        font-weight: lighter;
+        line-height: 29px;
+        font-size: 22px;
+    }
+
+    .principal-section a{
+        font-family: Inter;
+        font-size: 22px;
+        text-decoration: none;
+        color: white;
+        background-color: #377DFF;
+        width: 50%;
+        text-align: center;
+        border-radius: 30px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .principal-section a:hover{
+        background-color: blue;
+    }
+
+    .benefits-container{
+        height: 50vh;
+    }
+
+    .benefits-title{
+        text-align: center;
+    }
+
+    .benefits-title p{
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 10px;
+    }
+
+    .benefits-title h3{
+        font-family: inter;
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .benefits-grid p{
+        padding-top: 20px;
+        font-family: inter;
+        font-size: 16px;
+        color: #999999;
+    }
+
+    .benefits-grid{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        font-size: 22px;
+
+    }
+
+    .benefits-description{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .benefits-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .benefits-text p{
+        font-family: Inter;
+        font-size: 20px;
+    }
+
+    .benefits-text a{
+        font-family: Inter;
+        font-size: 22px;
+        text-decoration: none;
+        color: white;
+        background-color: #377DFF;
+        width: 50%;
+        text-align: center;
+        border-radius: 30px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .benefits-text a:hover{
+        background-color: blue;
+    }
+
+    .cases-industry{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10%;
+        align-items: center;
+    }
+
+    .cases-industry h4 {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 10px;
+    }
+    
+    .cases-industry h3{
+        font-family: inter;
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .cases-industry h3{
+        font-family: inter;
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .cases-industry p{
+        font-family: Inter;
+        font-size: 20px;
+        margin-bottom:5%;
+        margin-top: 5%;
+    }
+    
+    .cases-industry a{
+        font-family: Inter;
+        font-size: 22px;
+        text-decoration: none;
+        color: white;
+        background-color: #377DFF;
+        text-align: center;
+        border-radius: 30px;
+        cursor: pointer;
+        padding: 15px;
+
+    }
+
+    .cases-industry a:hover{
+        background-color: blue;
+    }
+
+    .cases-tipes{
+        display: grid;
+        grid-template-columns: auto auto; /* Dos columnas de tamaño automático */
+        grid-template-rows: auto auto; /* Dos filas de tamaño automático */
+        gap: 10px; 
+        align-items: center;
+
+    }
+
+    .cases-tipes h2{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+
+
+</style>
