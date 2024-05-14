@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Supera los desafios operativos de tu empresa">
  <section class="principal-section">
     <div class="principal-container">
-        <h2>Supera los desafios oporativos de tu empresa</h2>
+        <h2>Supera los desafios operativos de tu empresa</h2>
         <p>La RPA imita las acciones humanas en aplicaciones y sistemas, pero opera continuamente, es más rápida y precisa al 100%.</p>
         <a>Solicitar una Demostración</a>
     </div>
@@ -63,7 +63,7 @@ import Layout from "../../layouts/Layout.astro";
         <h4>CONOCE LOS</h4>
         <h3>Casos por industria</h3>
         <p>Nuestra experiencia abarca una amplia gama de servicios y areas, desde la automatización de procesos hasta la implementación de sistemas inteligentes que garantizan precisión y eficiencia. </p>
-        <a>Descarga nuestra guía</a>
+        <a class="cases-button">Descarga nuestra guía</a>
     </div>
     <div class="cases-tipes">
         <span class="container">
@@ -84,16 +84,20 @@ import Layout from "../../layouts/Layout.astro";
         </span>
     </div>
  </section>
- <section>
+ <section class="section-form">
     <div class="benefits-title">
         <p>NO TE QUEDES ATRAS</p>
         <h3>Contáctanos</h3>
     </div>
-    <div>
-        
-    </div>
+    <div class="container-contact">
+        <div>
+            <img src="../../Robot.png" alt="" />
     
-
+        </div>
+        <div>
+            <iframe class="form--frame" frameBorder="0" id=74c71a90-d2da-4343-9e39-630cb38c9ffb></iframe><script>var sandboxSrc = "https://28261c29b8e6485dba05ea820e2d5ecb.svc.dynamics.com/t/formsandbox/GI7V_TlzsR9A3IT7cBVQ77hUQwfqgaKmNiejqO1njGs/b9585709-8f96-ed11-aad0-000d3ac036b2?ad=" + encodeURIComponent(document.location.toString()); document.getElementById('74c71a90-d2da-4343-9e39-630cb38c9ffb').setAttribute('src', sandboxSrc); </script>
+        </div>
+    </div>
  </section>
 </Layout>
 
@@ -305,7 +309,147 @@ import Layout from "../../layouts/Layout.astro";
         flex-direction: column;
     }
 
- 
+    .section-form{
+        height: 50vh;
+    }
 
+    .container-contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form--frame{
+        border: 0;
+        width: 800px;
+        height: 500px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .principal-section{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding-top: 20%;
+            padding-bottom: 10%;
+            text-align: center;
+        }
+
+        .principal-section h2{
+            font-size: 35px;
+            line-height: 1.2;
+        }
+
+        .principal-section img{
+            width: 100%;
+        }
+
+        .principal-section a{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .benefits-container{
+            height: 100%;
+        }
+
+        .benefits-container h3{
+            font-size: 35px;
+            line-height: 1.2;
+            padding-bottom: 0%;
+        }
+
+        .benefits-grid {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            text-align: center;
+        }
+
+        .principal-section h2{
+            font-size: 35px;
+            line-height: 1.2;
+        }
+
+        .principal-section img{
+            width: 100%;
+        }
+
+        .principal-section a{
+            width: 100%;
+        }
+
+        .benefits-title h3{
+            font-size: 35px; 
+        }
+
+        .benefits-description{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .benefits-description img{
+            padding-top: 10%;
+            width: 100%;
+            
+        }
+
+        .benefits-text p {
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .benefits-text a{
+            margin-top: 10%;
+            width: 100%;
+        }
+
+        .cases-industry{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .cases-industry {
+            padding-top: 20%;
+            padding-bottom:20% ;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .cases-industry h3 {
+            font-size: 35px; 
+        }
+
+        .cases-text{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cases-industry a{
+            padding: 5px;
+        }
+
+        .section-form{
+            padding-top: 70%;
+        }
+
+        .container-contact{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .form--frame{
+            width: 100%
+        }
+
+    }
 
 </style>
